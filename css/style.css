@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    margin: 1.6rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* This Css of index.html */
+
+/* Header */
+
+header .menu-list {
+    display: flex;
+}
+
+header .menu-list li {
+    list-style: none;
+}
+
+header .menu-list li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+}
+
+/* Main */
+.home-page {
+    text-align: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.home-page .content {
+    border-radius: 8px;
+    background: #fff;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Text style Topic Home-page */
+.text-homepage-hard {
+    font-size: 300%;
+}
+.text-homepage-light {
+    font-size: 140%;
+}
+
+/* Footer */
+footer {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+
