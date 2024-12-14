@@ -10,7 +10,8 @@ body {
 }
 
 header {
-    margin: 1.6rem 10%;
+    margin: 30px 10%;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +31,7 @@ header .menu-list li {
 
 header .menu-list li a {
     text-decoration: none;
-    color: #000;
+    color: #333;
     padding: 10px 15px;
 }
 
@@ -41,23 +42,68 @@ header .menu-list li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
+    
 }
 
 .home-page .content {
-    border-radius: 8px;
-    background: #fff;
     padding: 30px;
     max-width: 800px;
     width: 100%;
 }
 
+.content-image {
+    display: flex;
+    justify-content: center; /* จัดกลางแนวนอน */
+    height: 100vh;
+
+    img {
+        border-radius: 23px;
+    }
+}
+
 /* Text style Topic Home-page */
 .text-homepage-hard {
     font-size: 300%;
+    margin-top: 20px;
 }
 .text-homepage-light {
     font-size: 140%;
+    margin-bottom: 20px;
+}
+
+/* article */
+article .topic-article {
+    font-size: 160%;
+}
+
+.article_1 p {
+    line-height: 1.8; /* เว้นบรรทัดให้สูงพอเหมาะเพื่อให้อ่านง่าย */
+    font-size: 16px;  /* ขนาดฟอนต์ที่ไม่เล็กเกินไป */
+    color: #333;      /* สีข้อความที่ดูสบายตา */
+    margin-bottom: 60px; /* เว้นระยะห่างระหว่างย่อหน้า */
+}
+
+.article_2 .topic p{
+    margin-top: 40px;
+    line-height: 1.8; /* เว้นบรรทัดให้สูงพอเหมาะเพื่อให้อ่านง่าย */
+    font-size: 25px;  /* ขนาดฟอนต์ที่ไม่เล็กเกินไป */
+    color: #333;      /* สีข้อความที่ดูสบายตา */
+    margin-bottom: 10px; /* เว้นระยะห่างระหว่างย่อหน้า */
+}
+
+.article_2 p{
+    margin-top: 40px;
+    line-height: 1.8; /* เว้นบรรทัดให้สูงพอเหมาะเพื่อให้อ่านง่าย */
+    font-size: 16px;  /* ขนาดฟอนต์ที่ไม่เล็กเกินไป */
+    color: #333;      /* สีข้อความที่ดูสบายตา */
+    margin-bottom: 10px; /* เว้นระยะห่างระหว่างย่อหน้า */
+}
+
+.article_2 .content-image-article {
+    display: flex;
+    justify-content: center; /* จัดกลางแนวนอน */
+    height: 60vh;
 }
 
 /* Footer */
@@ -65,7 +111,6 @@ footer {
     padding: 15px 0;
     text-align: center;
     width: 100%;
-    position: fixed;
     bottom: 0;
     left: 0;
 }
