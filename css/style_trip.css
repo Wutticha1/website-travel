@@ -241,13 +241,8 @@ footer #footer-logo {
     padding: 0 30px ;
     }
 
-    footer p{
-        margin-left: 40px;
-        
-        .logo{
-            display: flex;
-            justify-items: center;
-        }
+    footer #footer-logo {
+        margin: 0 auto; /* จัดโลโก้ใน footer ให้อยู่กลาง */
     }
 
     .menu-toggle {
@@ -270,9 +265,17 @@ footer #footer-logo {
     .article-trip p{
         padding: 0 60px ;
         }
+
+        footer p {
+            font-size: 14px;
+        }
+    
+        footer {
+            padding: 10px 0; /* ลด Padding ของ footer */
+        }
 }
 
-/* สไตล์สำหรับ hamburger menu */
+
 
 @media (max-width: 431px){
 
@@ -302,6 +305,8 @@ footer #footer-logo {
 
     .head-before-desc {
         font-size: 17px;
+        margin-bottom: 8px;
+        margin: 0 50px;
     }
 
     .span-topic {

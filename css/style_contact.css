@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    margin: 30px 10%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* This Css of index.html */
+
+/* Header */
+
+header .menu-list {
+    display: flex;
+    gap: 50px;
+}
+
+header .menu-list li {
+    list-style: none;
+}
+
+header .menu-list li a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+
+header .menu-list li a::after {
+    content: ""; /* เส้นเปล่า */
+    position: absolute;
+    left: 0 ; /* ชิดซ้าย */
+    bottom: 0; /* อยู่ล่างข้อความ */
+    width: 0; /* กำหนดความกว้างเริ่มต้น */
+    height: 3px;
+    background-color: green;
+    transition: width 0.4s ease-in-out;
+}
+
+header .menu-list li a:hover::after {
+    width: 100%;
+}
+
+header .menu-list li a:hover {
+    color: #3d5e4a;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo img{
+    width: 200%;
+    height: 200%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.divider {
+    border-bottom: 2px solid #ccc;
+    margin: 20px 100px;
+}
+
+
+/* main */
+main.container-content {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* Contact Form */
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f7f8fa;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+input:focus, textarea:focus {
+    background-color: #fff;
+    border: 1px solid #007BFF;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1aaa56;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #036138;
+}
+
+
+#footer{
+    height: 30px;
+    width: 100%;
+    background-color: #eaeaea;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+footer #footer-logo {
+    margin: 0 46.5%;
+}
+
