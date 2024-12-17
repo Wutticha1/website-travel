@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    margin: 30px 10%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .menu-list {
+    display: flex;
+    gap: 50px;
+}
+
+header .menu-list li {
+    list-style: none;
+}
+
+header .menu-list li a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+
+header .menu-list li a::after {
+    content: ""; /* เส้นเปล่า */
+    position: absolute;
+    left: 0 ; /* ชิดซ้าย */
+    bottom: 0; /* อยู่ล่างข้อความ */
+    width: 0; /* กำหนดความกว้างเริ่มต้น */
+    height: 3px;
+    background-color: green;
+    transition: width 0.4s ease-in-out;
+}
+
+header .menu-list li a:hover::after {
+    width: 100%;
+}
+
+header .menu-list li a:hover {
+    color: #3d5e4a;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo img{
+    width: 200%;
+    height: 200%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.divider {
+    border-bottom: 2px solid #ccc;
+    margin: 20px 100px;
+}
+
+
+.container-content {
+    height: 100%;
+}
+
+.content-padding {
+    padding: 20px;
+}
+
+.header-samll-topic {
+    margin: 0 90px;
+
+    .light {
+        color: #a0a6a9;
+    }
+
+    .hard {
+        color: #3d4245;
+    }
+}
+
+.head-topic {
+    margin: 20px 90px;
+    margin-bottom: 30px;
+    .head-topic-travel {
+        color:  #3d4245;
+        font-size: 40px;
+    }
+}
+
+.image-head-topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    margin-bottom: 50px;
+}
+
+.image-head-topic img{
+    border-radius: 20px; 
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* เว้นวรรค */
+p {
+    margin-bottom: 1rem;
+    color: #3d4245;
+}
+/* ------------------ */
+a {
+    text-decoration: none;
+}
+
+.ul-list {
+    margin-bottom: 1rem;
+    margin-left: 300px;
+}
+/* หัวข้อก่อนเริ่มเรื่อง */
+.head-before-desc {
+    text-align: center;
+    font-size: 28px;
+    color: #3d4245;
+    margin-bottom: 0.5rem;
+}
+
+.color-green {
+    color: #1eab33;
+}
+
+.layout-divider-invisible {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.h2-topic {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .span-topic {
+        color: #1eab33;
+    }
+}
+
+.image-topic {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        width: 900px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.article-trip {
+    text-align: center;
+}
+
+.article-trip p {
+    margin: 0 auto; /* เพิ่มระยะรอบข้อความ หากจำเป็น */
+    line-height: 1.8; /* ปรับระยะห่างระหว่างบรรทัดเพื่อความอ่านง่าย */
+    max-width: 860px; /* จำกัดความกว้างของข้อความเพื่อให้อ่านง่ายขึ้น */
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.detail {
+    color: #3d4245;
+}
+
+
+.divider-footer {
+    width: 100%; /* ความยาวของเส้น (สามารถปรับได้) */
+    height: 50px; /* ความหนาของเส้น */
+    background-color: #eceaea; /* สีของเส้น */
+    margin: 20px auto; /* กำหนดระยะห่างและจัดให้อยู่ตรงกลาง */
+    
+}
+
+#footer{
+    height: 30px;
+    width: 100%;
+    background-color: #eaeaea;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+footer #footer-logo {
+    margin: 0 46.5%;
+}
+
+/* iPaad */
+@media (max-width: 1024px){
+    .header-samll-topic {
+        margin: 0 50px;
+    }
+
+    .head-topic{
+        margin: 0 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+   .ul-list {
+    margin-left: 60px;
+   }
+
+   .article-trip p{
+    padding: 0 30px ;
+    }
+
+    footer #footer-logo {
+        margin: 0 auto; /* จัดโลโก้ใน footer ให้อยู่กลาง */
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Screen 768px */
+@media (max-width: 768px){
+    .header-samll-topic {
+        margin: 0 50px;
+    }
+
+    .head-topic{
+        margin: 0 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .article-trip p{
+        padding: 0 60px ;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    
+        footer {
+            padding: 10px 0; /* ลด Padding ของ footer */
+        }
+}
+
+
+
+@media (max-width: 431px){
+
+    header .menu-list li a {
+        font-size: 12px;
+    }
+
+    header .menu-list {
+        gap: 17px;
+    }
+
+    .header-samll-topic {
+        margin: 0 15px;
+
+        span{
+            font-size: 12px;
+        }
+    }
+
+    .head-topic {
+        margin: 20px 15px;
+    }
+
+    .head-topic .head-topic-travel{
+        font-size: 20px;
+    }
+
+    .head-before-desc {
+        font-size: 17px;
+        margin-bottom: 8px;
+        margin: 0 50px;
+    }
+
+    .span-topic {
+        font-size: 19px;
+    }
+
+    .article-trip p{
+        font-size: 11px;
+        padding: 0 30px;
+    }
+    
+    .detail{
+        font-size: 11px;
+    }
+
+    .ul-list ul li a {
+        font-size: 11px;
+    }
+
+    .ul-list ul li {
+        padding-right: 10px;
+    }
+
+    .ul-list {
+        margin-left: 30px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .divider {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    footer p{
+        margin-bottom: 16px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    footer #footer-logo {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

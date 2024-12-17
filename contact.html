@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าติดต่อ</title>
+    <link rel="stylesheet" href="css/style_contact.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+            <!-- Image -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image/logo.png" alt="logo-website">
+                </a>
+            </div>
+
+            <!-- Nav -->
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="trip_info.html">สถานที่ท่องเที่ยว</a></li>
+                    <li><a href="Contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- content -->
+     <main class="container-content">
+        <div class="content">
+            <div class="Head-Text">
+                <div class="head">
+                    <h1>Contact us</h1>
+                </div>
+                <div class="contact">
+                    <form action="/submit" method="POST" role="form" aria-label="แบบฟอร์มติดต่อ"> 
+                        <input  
+                            type="text"  
+                            id="fullname"  
+                            name="fullname"  
+                            required  
+                            aria-required="true" 
+                            minlength="2" 
+                            maxlength="100" 
+                            placeholder="ชื่อ-นามสกุล *" 
+                            aria-describedby="fullname-help"> 
+                    
+                        <input  
+                            type="email"  
+                            id="email"  
+                            name="email"  
+                            required  
+                            aria-required="true" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                            placeholder="อีเมล *" 
+                            aria-describedby="email-help"> 
+                    
+                        <input  
+                            type="tel"  
+                            id="tel"  
+                            name="tel" 
+                            pattern="[0-9]{10}" 
+                            placeholder="เบอร์โทรศัพท์" 
+                            aria-describedby="tel-help"> 
+                    
+                        <textarea  
+                            id="message"  
+                            name="message"  
+                            required  
+                            aria-required="true" 
+                            minlength="10" 
+                            rows="5" 
+                            placeholder="ข้อความ *" 
+                            aria-describedby="message-help"></textarea> 
+                    
+                        <button  
+                            type="submit" 
+                            aria-label="ส่งข้อความ"> 
+                            ส่งข้อความ
+                        </button> 
+                    </form>                    
+                </div>
+            </div>
+        </div>
+     </main>
+    
+    <div class="divider" id="footer"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo" id="footer-logo">
+            <img src="image/logo.png" alt="logo">
+        </div>
+        <b><p>Follow us Travel in thailand</p></b><br>
+        <p>&copy; 2024 Travel in Uthai Thani</p>
+    </footer>
+</body>
+</html>
+
