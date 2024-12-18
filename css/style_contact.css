@@ -161,3 +161,279 @@ footer #footer-logo {
     margin: 0 46.5%;
 }
 
+@media (max-width: 1024px){
+    .header-samll-topic {
+        margin: 0 50px;
+    }
+
+    .head-topic{
+        margin: 0 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+   .ul-list {
+    margin-left: 60px;
+   }
+
+   .article-trip p{
+    padding: 0 30px ;
+    }
+
+    footer #footer-logo {
+        margin: 0 auto; /* จัดโลโก้ใน footer ให้อยู่กลาง */
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Screen 768px */
+@media (max-width: 768px){
+    .header-samll-topic {
+        margin: 0 50px;
+    }
+
+    .head-topic{
+        margin: 0 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .article-trip p{
+        padding: 0 60px ;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    
+        footer {
+            padding: 10px 0; /* ลด Padding ของ footer */
+        }
+}
+
+/* Screen 768px */
+@media (max-width: 740px){
+    .header-samll-topic {
+        margin: 0 50px;
+    }
+    
+    header .menu-list li a {
+        font-size: 15px;
+    }
+
+    header .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .head-topic{
+        margin: 0 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .article-trip p{
+        padding: 0 60px ;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    
+        footer {
+            padding: 10px 0; /* ลด Padding ของ footer */
+        }
+
+        footer .logo {
+            width: 70px;
+            height: 70px;
+        }
+}
+
+/* Screen 610px */
+@media (max-width: 610px){
+    .header-samll-topic {
+        margin: 0 50px;
+    }
+    
+    header .menu-list li a {
+        font-size: 13px;
+    }
+
+    header .menu-list {
+        display: flex;
+        gap: 30px;
+    }
+
+    .head h1 {
+        font-size: 40px;
+    }
+
+    header .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .head-topic{
+        margin: 0 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .article-trip p{
+        padding: 0 60px ;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    
+        footer {
+            padding: 10px 0; /* ลด Padding ของ footer */
+        }
+
+        footer .logo {
+            width: 70px;
+            height: 70px;
+        }
+}
+
+@media (max-width: 431px){
+
+    header .menu-list li a {
+        font-size: 12px;
+    }
+
+    header .menu-list {
+        gap: 17px;
+    }
+
+    .header-samll-topic {
+        margin: 0 15px;
+
+        span{
+            font-size: 12px;
+        }
+    }
+
+    .head-topic {
+        margin: 20px 15px;
+    }
+
+    .head-topic .head-topic-travel{
+        font-size: 20px;
+    }
+
+    .head-before-desc {
+        font-size: 17px;
+        margin-bottom: 8px;
+        margin: 0 50px;
+    }
+
+    .span-topic {
+        font-size: 19px;
+    }
+
+    .article-trip p{
+        font-size: 11px;
+        padding: 0 30px;
+    }
+    
+    .detail{
+        font-size: 11px;
+    }
+
+    .ul-list ul li a {
+        font-size: 11px;
+    }
+
+    .ul-list ul li {
+        padding-right: 10px;
+    }
+
+    .ul-list {
+        margin-left: 30px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .divider {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    footer p{
+        margin-bottom: 16px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    footer #footer-logo {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Screen 410px */
+@media (max-width: 410px){
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header-samll-topic {
+        margin: 0 50px;
+    }
+    
+    header .menu-list li a {
+        font-size: 10px;
+    }
+
+    header .menu-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    .head h1 {
+        font-size: 40px;
+    }
+
+    header .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .head-topic{
+        margin: 0 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .article-trip p{
+        padding: 0 60px ;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    
+        footer {
+            padding: 10px 0; /* ลด Padding ของ footer */
+        }
+
+        footer .logo {
+            width: 50px;
+            height: 50px;
+        }
+}
